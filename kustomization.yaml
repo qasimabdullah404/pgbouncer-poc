@@ -1,0 +1,8 @@
+resources:
+  - 1-namespace.yaml
+  - 2-pg-pv.yaml
+  - 3-pg-deploy.yaml
+  - 4-pg-svc.yaml
+  - 5-pg-bouncer-cm.yaml
+  - 6-pg-bouncer-deploy.yaml
+  - 7-pg-bouncer-svc.yaml
