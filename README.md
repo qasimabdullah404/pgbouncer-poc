@@ -4,7 +4,13 @@ This document provides the steps to set up and test [PgBouncer](https://www.pgbo
 
 ## Setup
 
-### 1. Start Minikube with Calico CNI
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/qasimabdullah404/pgbouncer-poc.git
+```
+
+### 2. Start Minikube with Calico CNI
 
 Use the following command to start Minikube with the Calico CNI (Container Network Interface) plugin and allocate appropriate resources:
 
@@ -12,7 +18,7 @@ Use the following command to start Minikube with the Calico CNI (Container Netwo
 minikube start --cni=calico --network-plugin=cni --memory=4G --cpus=2
 ```
 
-### 2. Generate the Combined Manifest Using Kustomize
+### 3. Generate the Combined Manifest Using Kustomize
 
 Run the following command to generate a combined Kubernetes manifest (manifest.yaml) using Kustomize. This will combine all the necessary Kubernetes resources into one file, and then you can apply it:
 
